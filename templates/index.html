@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>数字统计</h1>
+<form action="{% url 'count' %}" method="get">
+    {% csrf_token %}
+    <textarea cols="100" rows="25" name="textarea">在此处输入文本</textarea>
+    <br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
